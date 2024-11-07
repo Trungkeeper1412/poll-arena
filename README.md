@@ -21,6 +21,7 @@ $ cd poll-arena
 $ npm install
 $ npm start
 ```
+(Recommended) you can use npm run test before npm start to check if the unit test case running smoothly
 
 After this, open your favourite browser and enter the link below (but usually NPM will do it automatically for you)
 - [http://localhost:3000](http://localhost:3000)
