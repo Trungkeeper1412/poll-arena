@@ -1,0 +1,30 @@
+.poll-card {
+  width: 600px;
+  height: 300px;
+  padding: 15px;
+}
+
+.card-user {
+  display: flex;
+}
+
+.card-user .avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.card-user .timestamp {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  padding: 1rem;
+  border-left: 2px solid #9abbde;
+}

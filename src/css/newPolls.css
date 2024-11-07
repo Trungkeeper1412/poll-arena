@@ -1,0 +1,33 @@
+.new-poll-card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card-header-custom {
+  background-color: #f8f9fa;
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #6c757d;
+  margin: 0 10px;
+}
+
+.or-text {
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.card-header-custom h6 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+}

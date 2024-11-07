@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.login-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../public/login-background.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.login-content {
+  position: relative;
+  z-index: 1;
+}
+
+.login-card {
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group-text {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./index.css";
+import { connect } from "react-redux";
+import AppRouter from "./router/AppRouter";
+import { getPolls } from "./actions/polls";
+import { getUsers } from "./actions/users";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = ({ getPolls, getUsers }) => {
+  useEffect(() => {
+    getPolls();
+    getUsers();
+  }, [getPolls, getUsers]);
 
-export default App;
+  return <AppRouter />;
+};
+
+const mapDispatchToProps = {
+  getPolls,
+  getUsers,
+};
+
+export default connect(null, mapDispatchToProps)(App);

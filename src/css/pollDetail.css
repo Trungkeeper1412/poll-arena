@@ -1,0 +1,22 @@
+.card-user .author {
+  margin-left: 10px;
+}
+.red-response {
+  background-color: #ffcccc;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.blue-response {
+  background-color: #cce5ff;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.response-card {
+  border: none;
+}
+
+.response-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
