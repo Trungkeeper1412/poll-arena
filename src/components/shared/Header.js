@@ -26,11 +26,11 @@ const Header = () => {
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="/new-poll">
+          <Nav.Link as={Link} to="/add">
             New Polls
           </Nav.Link>
-          <Nav.Link as={Link} to="/trending">
-            Trendings
+          <Nav.Link as={Link} to="/leaderboard">
+            Leaderboard
           </Nav.Link>
           {authedUser ? (
             <Nav.Item className="d-flex align-items-center">

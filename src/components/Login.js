@@ -28,10 +28,6 @@ const Login = () => {
     }
   }, [authedUser, navigate]);
 
-  const handleBackHome = () => {
-    navigate("/");
-  };
-
   return (
     <Container
       className="d-flex align-items-center justify-content-center login-container"
@@ -78,11 +74,6 @@ const Login = () => {
             </Button>
             {error && <p style={{ color: "red" }}>{error}</p>}
           </Form>
-
-          {/* Back to Home Button */}
-          <Button variant="link" onClick={handleBackHome} className="mt-3">
-            Back to Home
-          </Button>
         </Card.Body>
       </Card>
     </Container>

@@ -69,7 +69,7 @@ describe("Header Component", () => {
         <Provider store={store}>
           <Header />
           <Routes>
-            <Route path="/new-poll" element={<NewPolls />} />
+            <Route path="/add" element={<NewPolls />} />
           </Routes>
         </Provider>
       </MemoryRouter>
