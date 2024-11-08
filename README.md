@@ -41,5 +41,5 @@ After this, open your browser and enter the link below (but usually NPM will do 
   ![image](https://github.com/user-attachments/assets/8300d073-cd5e-4384-ab0d-37a5b82a47dd)
   Poll Details Page
 
-  ![image](https://github.com/user-attachments/assets/dc05ac19-9898-4cc1-a1b2-d2f126d90ef8)
-  Trendings Page
+  ![image](https://github.com/user-attachments/assets/ca75fcb1-9cd1-493b-86ea-e5a70fc98285)
+  Leaderboard Page
