@@ -31,7 +31,7 @@ After this, open your browser and enter the link below (but usually NPM will do 
 - [http://localhost:3000](http://localhost:3000)
 
 ## Screenshots
-  ![image](https://github.com/user-attachments/assets/dcf5679e-c93b-4fa2-8341-ff17b056a7a1)
+  ![image](https://github.com/user-attachments/assets/c2b06a29-0c36-44d9-ad9b-973185151f92)
   The Main Page
 
   ![image](https://github.com/user-attachments/assets/c480c8da-9f22-4e9c-9509-c1b2ed6059f8)
