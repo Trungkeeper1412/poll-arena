@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Container, Form, Button, Card } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { savePoll } from "../actions/polls";
@@ -10,11 +10,6 @@ const NewPolls = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const authedUser = useSelector((state) => state.users.authedUser);
-  useEffect(() => {
-    if (authedUser === null) {
-      navigate("/login");
-    }
-  }, [authedUser, navigate]);
 
   const [option1, setOption1] = useState("");
   const [option2, setOption2] = useState("");
@@ -66,6 +61,11 @@ const NewPolls = () => {
       setSubmitMessage("Poll created successfully!");
       setOption1("");
       setOption2("");
+
+      // Redirect to homepage after 1 second
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
     } catch (error) {
       setSubmitMessage("Submission failed, please try again later.");
     } finally {
