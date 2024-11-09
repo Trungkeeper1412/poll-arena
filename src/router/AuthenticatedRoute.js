@@ -1,9 +1,16 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { connect } from "react-redux";
 
 const AuthenticatedRoute = ({ element, authedUser }) => {
-  return authedUser ? element : <Navigate to="/login" />;
+  const location = useLocation();
+
+  // If the user is not authenticated, redirect to login and store the current pathname
+  return authedUser ? (
+    element
+  ) : (
+    <Navigate to="/login" state={{ from: location }} />
+  );
 };
 
 const mapStateToProps = (state) => ({

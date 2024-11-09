@@ -4,18 +4,20 @@ import { Container, Form, Button, Card } from "react-bootstrap";
 import { FaLock } from "react-icons/fa";
 import { BiRename } from "react-icons/bi";
 import { loginUser } from "../actions/users.js";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "../css/login.css";
 
 const Login = () => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/"; // Default to homepage if no previous path
+
   const dispatch = useDispatch();
   const error = useSelector((state) => state.users.error);
   const authedUser = useSelector((state) => state.users.authedUser);
-
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,9 +26,9 @@ const Login = () => {
 
   useEffect(() => {
     if (authedUser) {
-      navigate("/");
+      navigate(from);
     }
-  }, [authedUser, navigate]);
+  }, [authedUser, navigate, from]);
 
   return (
     <Container
